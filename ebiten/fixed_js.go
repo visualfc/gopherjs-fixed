@@ -7,9 +7,9 @@ import (
 	"github.com/visualfc/gopherjs-fixed/ebiten/jsutil"
 )
 
-var (
+func init() {
 	_ = jsutil.TemporaryUint8ArrayFromUint8Slice
 	_ = jsutil.TemporaryUint8ArrayFromUint16Slice
 	_ = jsutil.TemporaryUint8ArrayFromFloat32Slice
 	_ = jsutil.TemporaryFloat32Array
-)
+}
